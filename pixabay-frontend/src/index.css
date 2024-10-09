@@ -1,0 +1,49 @@
+.App-header {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;  /* Space between buttons */
+  padding: 10px;
+}
+
+.prev-button {
+  align-self: flex-start;  /* Align to the top-left */
+}
+
+.next-button {
+  align-self: flex-start;  /* Align to the top-right */
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* Strictly 3 columns */
+  grid-gap: 10px;  /* Adds space between images */
+  padding: 20px;
+}
+
+.photo-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}
+
+.pagination {
+  margin-top: 20px;
+}
